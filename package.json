@@ -1,0 +1,24 @@
+{
+  "name": "hitmeup",
+  "version": "1.0.0",
+  "description": "Hit Me Up website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --style=compressed styling/main.scss main.css",
+    "watch:sass": "npm run sass -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the8gency/hitmeup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the8gency/hitmeup/issues"
+  },
+  "homepage": "https://github.com/the8gency/hitmeup#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}
