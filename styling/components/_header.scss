@@ -1,3 +1,78 @@
-header {
-    background: yellow;
+.header {
+    background: $black;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    
+    @include media-min(md) {
+        padding: 2rem 3rem;
+    }
+    @include media-min(lg) {
+        padding: 2rem 4rem;
+        flex-direction: row;
+    }
+    
+    &__logo {
+        margin-bottom: 1rem;
+        
+        @include media-min(lg) {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__nav {
+        
+        &__list {
+            display: flex;
+            
+            &__item {
+                font-size: 1.2rem;
+                margin-left: 0.75rem;
+                
+                @include media-min(sm) {
+                    margin-left: 1rem;
+                }
+
+                @include media-min(md) {
+                    font-size: 1.5rem;
+                    margin-left: 2rem;
+                }
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                
+                &.active {
+                    font-weight: 600;
+                }
+
+                a {
+                    position: relative;
+                    padding: 0 0.5rem;
+
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        background: $accent;
+                        border: 2px solid $black;
+                        width: 0;
+                        height: 0.15rem;
+                        top: calc(50% - 2px);
+                        left: -4px;
+                        @include transition(0.3s);
+                    }
+                    
+                    &:hover {
+                        &::before {
+                            left: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
