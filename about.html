@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <title>Hit Me Up</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="./main.css">
+  <title>Hit Me Up</title>
 </head>
 
 <body>
@@ -33,51 +36,66 @@
         </nav>
     </header>
 
-    <div class="container">
+  <div class="container max-width">
+    <div class="about">
+      <h2>About Hit Me Up</h2>
+      <div class="images">
         <div>
-            <div>
-                <div class="hero-heading">
-                    <span class="subtitle">Hitman Service</span>
-                    <h2>Hire a hitman</h2>
-                    <h3>Hire a hitman to do the dirty work for you.</h3>
-                </div>
-                <div>
-                    <button class="button">Choose your hitman</button>
-                </div>
-
-            </div>
+          <img src="./images/safe.png" alt="safe">
+          <section>
+            <h3>We value your privacy</h3>
+            <p>HMU can assure you your personal information will be protected by us.</p>
+          </section>
         </div>
+        <div>
+          <section>
+            <h3>We have high succes rates</h3>
+            <p>With our high success rates we can almost assure you
+              your target will be eliminated!</p>
+          </section>
+          <img src="./images/party.png" alt="safe">
+        </div>
+        <div>
+          <img src="./images/select.png" alt="safe">
+          <section>
+            <h3>Make your choice</h3>
+            <p>We offer a large selection of hitman so you can pick
+              the right hitman for the job.</p>
+          </section>
+        </div>
+      </div>
     </div>
+  </div>
 
     <footer class="max-width">
         <section class="footer-top">
             <a class="footer-top__logo" href="/">
                 <img src="./images/logo.svg" alt="Hit Me Up">
             </a>
-    
+
             <div class="footer-top__nav">
                 <ul>
                     <li class="active">
                         <a href="/">Home</a>
                     </li>
-    
+
                     <li>
                         <a href="/services">Services</a>
                     </li>
-    
+
                     <li>
                         <a href="/about">About</a>
                     </li>
-    
+
                     <li>
                         <a href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
-    
+
             <div class="footer-top__newsletter">
                 <p>Stay up to date with the latest from HMU</p>
-    
+
                 <form>
                     <label for="newsletter" class="label-alt">
                         <!-- <span>Enter your e-mail address</span> -->
@@ -90,28 +108,28 @@
                 </form>
             </div>
         </section>
-    
+
         <section class="footer-bottom">
             <ul>
                 <li>
                     <a href="/">Terms & Conditions</a>
                 </li>
-    
+
                 <li>
                     <a href="/">Privacy</a>
                 </li>
-    
+
                 <li>
                     <a href="/">Cookies</a>
                 </li>
-    
+
                 <li>
                     <a href="/">© 2021 HMU</a>
                 </li>
             </ul>
         </section>
     </footer>
-    
+
     <script src="./index.js"></script>
 </body>
 

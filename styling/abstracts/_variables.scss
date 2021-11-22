@@ -1,25 +1,17 @@
 //Colours
-$primary: #562009;
-$secondary: #F4EBE1;
-$ternary: #fcf7f3;
+// $primary: #562009;
+// $secondary: #F4EBE1;
+// $ternary: #fcf7f3;
 $accent: #EC2C2C;
 $black: #1E1E1E;
-$grey: #BCBCBC;
+// $grey: #BCBCBC;
 $white: #FFFFFF;
-$shadow: #1111112B;
+// $shadow: #1111112B;
 
 // A map of breakpoints.
 $breakpoints: (
-  // 448px
-//   xxs: 28rem,
-//   // 576px
-//   xs: 36rem,
-//   // 624px
-//   xss: 39rem,
-//   // 688px
-//   ss: 43rem,
-//   // 800px
-//   sm: 50rem,
-  // 1040px
-  lg: 65rem,
+  sm: 25rem,
+  md: 32rem,
+  lg: 50rem,
+  xl: 62rem
 );

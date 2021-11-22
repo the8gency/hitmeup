@@ -19,13 +19,15 @@
 // 4. Components
 @import
   'components/header',
-  'components/footer',
   'components/button',
-  'components/services';
+  'components/footer';
     
 // 5. Layout-related sections
 @import
-  'layout/home';
+  'layout/home',
+  'layout/contact',
+  'layout/about',
+  'layout/services';
 
 // 6. Page-specific styles
 // @import

@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <title>Hit Me Up</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+
+  <link rel="stylesheet" href="./main.css">
+  <title>Hit Me Up</title>
 </head>
 
 <body>
@@ -33,51 +36,82 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div>
-            <div>
-                <div class="hero-heading">
-                    <span class="subtitle">Hitman Service</span>
-                    <h2>Hire a hitman</h2>
-                    <h3>Hire a hitman to do the dirty work for you.</h3>
-                </div>
-                <div>
-                    <button class="button">Choose your hitman</button>
-                </div>
+  <div class="container max-width">
+    <div id='map' style='width: 100%; height: 600px; margin-bottom: 1.5rem;'></div>
+    <script>
+      // TO MAKE THE MAP APPEAR YOU MUST
+      // ADD YOUR ACCESS TOKEN FROM
+      // https://account.mapbox.com
+      mapboxgl.accessToken =
+        'pk.eyJ1Ijoic3licmVuZGIiLCJhIjoiY2txdGtvYWJ3MDBiNjJ1bW1qc2Z1NDJqZyJ9.pU0f9LsEAo44NXmktpdnYA';
+      const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/dark-v10', // style URL
+        center: [3.734197094597676, 51.03024713208977, ], // starting position [lng, lat]
+        zoom: 10 // starting zoom
+      });
+    </script>
+    <div class="flex-container">
+      <form>
+        <label for="">First name
+          <input type="text" placeholder="Your first name">
+        </label>
+        <label for="">Last name
+          <input type="text" placeholder="Your last name">
+        </label>
+        <label for="">Your email
+          <input type="email" placeholder="Your email">
+        </label>
+        <label for="">Phone number
+          <input type="text" placeholder="Your phone number">
+        </label>
+        <label for="">Your message
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+        </label>
+        <button class="button">Send message</button>
+      </form>
 
-            </div>
-        </div>
+      <div class="contact">
+        <h2>Contact us</h2>
+        <a href="mailto:hitmeup@gmail.com">hitmeup@gmail.com</a>
+        <a href="tel:0475123456">+32 475 12 34 56</a>
+        <h2>Find us</h2>
+        <p>Foreestelaan 9</p>
+        <p>9000 Gent</p>
+        <p>België</p>
+      </div>
     </div>
+  </div>
 
     <footer class="max-width">
         <section class="footer-top">
             <a class="footer-top__logo" href="/">
                 <img src="./images/logo.svg" alt="Hit Me Up">
             </a>
-    
+
             <div class="footer-top__nav">
                 <ul>
                     <li class="active">
                         <a href="/">Home</a>
                     </li>
-    
+
                     <li>
                         <a href="/services">Services</a>
                     </li>
-    
+
                     <li>
                         <a href="/about">About</a>
                     </li>
-    
+
                     <li>
                         <a href="/contact">Contact</a>
                     </li>
                 </ul>
             </div>
-    
+
             <div class="footer-top__newsletter">
                 <p>Stay up to date with the latest from HMU</p>
-    
+
                 <form>
                     <label for="newsletter" class="label-alt">
                         <!-- <span>Enter your e-mail address</span> -->
@@ -90,29 +124,29 @@
                 </form>
             </div>
         </section>
-    
+
         <section class="footer-bottom">
             <ul>
                 <li>
                     <a href="/">Terms & Conditions</a>
                 </li>
-    
+
                 <li>
                     <a href="/">Privacy</a>
                 </li>
-    
+
                 <li>
                     <a href="/">Cookies</a>
                 </li>
-    
+
                 <li>
                     <a href="/">© 2021 HMU</a>
                 </li>
             </ul>
         </section>
     </footer>
-    
-    <script src="./index.js"></script>
+
+  <script src="./index.js"></script>
 </body>
 
 </html>
