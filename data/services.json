@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Arthur Timmerman",
+    "successrate": 97,
+    "price": 50000,
+    "kills": 87,
+    "policeKills": 6
+  },
+  {
+    "name": "Jeroen De Welde",
+    "successrate": 79,
+    "price": 40000,
+    "kills": 87,
+    "policeKills": 4
+  },
+  {
+    "name": "Jamie Hart",
+    "successrate": 99,
+    "price": 80000,
+    "kills": 187,
+    "policeKills": 76
+  },
+  {
+    "name": "Dylan Catelyn",
+    "successrate": 34,
+    "price": 10000,
+    "kills": 34,
+    "policeKills": 2
+  },
+  {
+    "name": "Jan Deschacht",
+    "successrate": 80,
+    "price": 43000,
+    "kills": 98,
+    "policeKills": 30
+  },
+  {
+    "name": "Tim Desaeger",
+    "successrate": 93,
+    "price": 60000,
+    "kills": 398,
+    "policeKills": 45
+  },
+  {
+    "name": "Nicolas Cnudde",
+    "successrate": 94,
+    "price": 70000,
+    "kills": 837,
+    "policeKills": 7
+  },
+  {
+    "name": "Charlotte Delvaux",
+    "successrate": 87,
+    "price": 40000,
+    "kills": 57,
+    "policeKills": 4
+  },
+  {
+    "name": "Benny Caster",
+    "successrate": 45,
+    "price": 8000,
+    "kills": 5,
+    "policeKills": 9
+  },
+  {
+    "name": "Jan Temmerman",
+    "successrate": 87,
+    "price": 30000,
+    "kills": 47,
+    "policeKills": 2
+  },
+  {
+    "name": "Arthur Deschacht",
+    "successrate": 65,
+    "price": 45000,
+    "kills": 89,
+    "policeKills": 9
+  },
+  {
+    "name": "Jamie Cnudde",
+    "successrate": 78,
+    "price": 36000,
+    "kills": 77,
+    "policeKills": 6
+  }
+]

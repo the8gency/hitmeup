@@ -1,0 +1,51 @@
+.servicesTitle {
+  padding: 1.5rem;
+}
+
+.servicesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.5rem;
+
+  li {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1.5rem;
+    background-color: #151414;
+    border-radius: 1rem;
+    
+    @media (min-width: 44rem) {
+      width: 48%;
+    }
+
+    @media (min-width: 62rem) {
+      width: 31%;
+    }
+
+    img {
+      border-radius: 1rem 1rem 0 0;
+    }
+
+    .call {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+
+    .item-detail {
+      padding: 1.5rem;
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        
+        p {
+          margin-left: 3rem;
+        }
+      }
+    }
+
+  }
+}
