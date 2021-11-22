@@ -10,12 +10,98 @@
 </head>
 
 <body>
-  <div>
+    <header class="header max-width">
+        <a href="/" class="header__logo">
+            <img src="./images/logo.svg" alt="Hit Me Up">
+        </a>
+
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item active">
+                    <a href="/" title="Home">Home</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="/services.html" title="Services">Services</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="/about.html" title="About">About</a>
+                </li>
+                <li class="header__nav__list__item">
+                    <a href="/contact.html" title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
     <h1 class="servicesTitle">Available hitmen</h1>
     <ul class="servicesList" id="servicesList">
 
     </ul>
-  </div>
+  </main>
+
+    <footer class="max-width">
+        <section class="footer-top">
+            <a class="footer-top__logo" href="/">
+                <img src="./images/logo.svg" alt="Hit Me Up">
+            </a>
+
+            <div class="footer-top__nav">
+                <ul>
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/services.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-top__newsletter">
+                <p>Stay up to date with the latest from HMU</p>
+
+                <form>
+                    <label for="newsletter" class="label-alt">
+                        <!-- <span>Enter your e-mail address</span> -->
+                        <input class="input-alt" type="text" id="newsletter" name="newsletter">
+                    </label>
+                    
+                    <button class="button">
+                        Sign up
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            <ul>
+                <li>
+                    <a href="/">Terms & Conditions</a>
+                </li>
+
+                <li>
+                    <a href="/">Privacy</a>
+                </li>
+
+                <li>
+                    <a href="/">Cookies</a>
+                </li>
+
+                <li>
+                    <a href="/">© 2021 HMU</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 
     <script src="./index.js"></script>
 </body>
