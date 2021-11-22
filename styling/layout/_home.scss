@@ -1,0 +1,31 @@
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.hero-heading {
+  padding-bottom: 1.5rem;
+}
+
+.subtitle {
+  position: relative;
+  color: $accent;
+  font-size: 1.5rem;
+  margin-left: 4.8rem;
+
+  &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50px;
+      height: 0.2rem;
+      padding-right: 1rem;
+      top: 50%;
+      right: 102%;
+      background-color: $accent;
+      width: 3.5rem;
+
+      @include media-min(fullPlus) {
+          width: calc(100vw - 80rem);
+      }
+  }
+}
