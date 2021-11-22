@@ -24,8 +24,8 @@
       background-color: $accent;
       width: 3.5rem;
 
-      @include media-min(fullPlus) {
-          width: calc(100vw - 80rem);
-      }
+    //   @include media-min(fullPlus) {
+    //       width: calc(100vw - 80rem);
+    //   }
   }
 }
