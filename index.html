@@ -10,29 +10,28 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header max-width">
         <a href="/" class="header__logo">
-            <img src="./images/logo.svg" alt="">
+            <img src="./images/logo.svg" alt="Hit Me Up">
         </a>
 
         <nav class="header__nav">
             <ul class="header__nav__list">
                 <li class="header__nav__list__item active">
-                    <a href="/">Home</a>
+                    <a href="/" title="Home">Home</a>
                 </li>
                 <li class="header__nav__list__item">
-                    <a href="/services">Services</a>
+                    <a href="/services" title="Services">Services</a>
                 </li>
                 <li class="header__nav__list__item">
-                    <a href="/about">About</a>
+                    <a href="/about" title="About">About</a>
                 </li>
                 <li class="header__nav__list__item">
-                    <a href="/contact">Contact</a>
+                    <a href="/contact" title="Contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-
 
     <div class="container">
         <div>
@@ -43,12 +42,75 @@
                     <h3>Hire a hitman to do the dirty work for you.</h3>
                 </div>
                 <div>
-                    <button>Choose your hitman</button>
+                    <button class="button">Choose your hitman</button>
                 </div>
 
             </div>
         </div>
     </div>
+
+    <footer class="max-width">
+        <section class="footer-top">
+            <a class="footer-top__logo" href="/">
+                <img src="./images/logo.svg" alt="Hit Me Up">
+            </a>
+    
+            <div class="footer-top__nav">
+                <ul>
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+    
+                    <li>
+                        <a href="/services">Services</a>
+                    </li>
+    
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+    
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-top__newsletter">
+                <p>Stay up to date with the latest from HMU</p>
+    
+                <form>
+                    <label for="newsletter" class="label-alt">
+                        <!-- <span>Enter your e-mail address</span> -->
+                        <input class="input-alt" type="text" id="newsletter" name="newsletter">
+                    </label>
+                    
+                    <button class="button">
+                        Sign up
+                    </button>
+                </form>
+            </div>
+        </section>
+    
+        <section class="footer-bottom">
+            <ul>
+                <li>
+                    <a href="/">Terms & Conditions</a>
+                </li>
+    
+                <li>
+                    <a href="/">Privacy</a>
+                </li>
+    
+                <li>
+                    <a href="/">Cookies</a>
+                </li>
+    
+                <li>
+                    <a href="/">© 2021 HMU</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
     <script src="./index.js"></script>
 </body>
 

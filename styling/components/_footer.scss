@@ -1,3 +1,199 @@
 footer {
-    background: yellow;
+    padding: 2rem 2rem;
+    padding-top: 4rem;
+
+    @include media-min(md) {
+        padding: 2rem 3rem;
+        padding-top: 4rem;
+    }
+
+    @include media-min(lg) {
+        padding: 2rem 4rem;
+        padding-top: 4rem;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        @include media-min(xl) {
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        
+        &__logo {
+            width: 100%;
+            
+            @include media-min(xl) {
+                width: 25%;
+            }
+        }
+        
+        &__nav {
+            width: 100%;
+            display: flex;
+            margin: 2rem 0;
+            
+            @include media-min(xl) {
+                justify-content: center;
+                margin: 0;
+                width: 50%;
+            }
+            
+            ul {
+                display: flex;
+                // align-items: center;
+                flex-direction: column;
+                
+                @include media-min(xl) {
+                    flex-direction: row;
+                }
+                
+                li {
+                    margin-left: 0;
+                    font-size: 1.25rem;
+                    
+                    @include media-min(xl) {
+                        margin-left: 1.5rem;
+                    }
+
+                    &:first-of-type {
+                        margin-left: 0;
+                    }
+
+                    &.active {
+                        font-weight: 600;
+                    }
+
+                    a {
+                        position: relative;
+                        padding: 0 0.5rem;
+    
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            background: $accent;
+                            border: 2px solid $black;
+                            width: 0;
+                            height: 0.15rem;
+                            top: calc(50% - 2px);
+                            left: -4px;
+                            @include transition(0.3s);
+                        }
+                        
+                        &:hover {
+                            &::before {
+                                left: 0;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        &__newsletter {
+            width: 100%;
+
+            @include media-min(md) {
+                width: 50%;
+            }
+
+            @include media-min(xl) {
+                width: 25%;
+            }
+
+            p {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                
+                label {
+                    width: 100%;
+                    display: block;
+                    position: relative;
+                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
+
+                    input {
+                        display: block;
+                        width: 100%;
+                        background-color: $black;
+                        border-bottom: 3px solid $white;
+                        font-size: 1.2rem;
+                        padding: 1rem 0;
+                        color: $white;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 3px;
+                        background-color: $accent;
+                        transition: all 0.5s ease;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        &::before {
+                            width: 100%;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-top: 4rem;
+        width: 100%;
+        
+        @include media-min(md) {
+            padding-top: 2rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            
+            @include media-min(md) {
+                justify-content: center;
+                flex-direction: row;
+            }
+            
+            li {
+                margin-left: 0;
+                margin-bottom: 0.75rem;
+                color: #5E5E5E;
+                
+                @include media-min(md) {
+                    margin-bottom: 0;
+                    margin-left: 1.5rem;
+                }
+
+                &:first-of-type {
+                    margin-left: 0;
+                }
+
+                a {
+                    @include transition;
+                    
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
 }
